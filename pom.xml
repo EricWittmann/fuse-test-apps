@@ -40,6 +40,7 @@
 
   <modules>
   <module>fta-cdi-war</module>
+  <module>fta-errai-cdi-war</module>
   </modules>
 
   <build>

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.overlord.fta.cdi.listeners;
+package org.overlord.fta.erraicdi.listeners;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletRequestEvent;

@@ -84,8 +84,8 @@
               <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
               <Bundle-Version>1.0.0</Bundle-Version>
               <Bundle-Name>${project.name}</Bundle-Name>
-              <Web-ContextPath>/jta-cdi-war</Web-ContextPath>
-              <Webapp-Context>/jta-cdi-war</Webapp-Context>
+              <Web-ContextPath>/fta-cdi-war</Web-ContextPath>
+              <Webapp-Context>/fta-cdi-war</Webapp-Context>
               <Import-Package>
                 javax.servlet,
                 javax.servlet.http,
