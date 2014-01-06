@@ -20,8 +20,8 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.http.HttpSessionEvent;
 
-import org.jboss.weld.environment.servlet.ExactListener;
 import org.jboss.weld.servlet.api.ServletListener;
+import org.overlord.commons.osgi.weld.BundleListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,8 +43,7 @@ public class Listener implements ServletListener {
      */
     public Listener() {
         swapper = new ContextClassLoaderSwapper();
-        delegate = new ExactListener();
-//        delegate = new org.jboss.weld.environment.servlet.Listener();
+        delegate = new BundleListener();
         swapper.restore();
     }
     

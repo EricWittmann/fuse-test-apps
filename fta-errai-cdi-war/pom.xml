@@ -56,7 +56,7 @@
       <artifactId>mvel2</artifactId>
     </dependency>
 
-    <!-- CDI Integration Modules -->
+    <!-- CDI/OSGi Integration Modules -->
     <dependency>
       <groupId>org.jboss.errai</groupId>
       <artifactId>errai-cdi-client</artifactId>
@@ -71,7 +71,18 @@
     </dependency>
     <dependency>
       <groupId>org.overlord</groupId>
-      <artifactId>errai-fuse-support</artifactId>
+      <artifactId>overlord-commons-osgi</artifactId>
+      <version>2.0.0-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.overlord</groupId>
+      <artifactId>overlord-commons-osgi-weld</artifactId>
+      <version>2.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.overlord</groupId>
+      <artifactId>overlord-commons-errai-fuse-support</artifactId>
       <version>2.0.0-SNAPSHOT</version>
     </dependency>
 
@@ -112,12 +123,6 @@
       <groupId>javax.inject</groupId>
       <artifactId>javax.inject</artifactId>
     </dependency>
-    
-    <!-- Other Libraries -->
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-    </dependency>
   </dependencies>
 
   <build>
@@ -148,7 +153,8 @@
                 org.osgi.framework,
                 org.osgi.framework.wiring,
                 org.eclipse.jetty.servlet,
-                org.eclipse.jetty.server.handler
+                org.eclipse.jetty.server.handler,
+                org.overlord.commons.osgi.vfs
               </Import-Package>
               <Bundle-ClassPath>
                 .,
@@ -201,7 +207,8 @@
                 WEB-INF/lib/weld-servlet-core-1.1.13.Final.jar,
                 WEB-INF/lib/weld-spi-1.1.Final.jar,
                 WEB-INF/lib/xml-apis-1.3.04.jar,
-                WEB-INF/lib/errai-fuse-support-2.0.0-SNAPSHOT.jar
+                WEB-INF/lib/overlord-commons-errai-fuse-support-2.0.0-SNAPSHOT.jar,
+                WEB-INF/lib/overlord-commons-osgi-weld-2.0.0-SNAPSHOT.jar
               </Bundle-ClassPath>
             </manifestEntries>
           </archive>
