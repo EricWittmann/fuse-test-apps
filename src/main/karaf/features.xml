@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
 
-   <feature name="fta-dependencies" version="1.0.0">
+   <feature name="fta-dependencies" version="1.0.0-SNAPSHOT">
       <feature>http</feature>
       <feature>war</feature>
       <bundle>wrap:mvn:jakarta-regexp/jakarta-regexp/1.4$Bundle-SymbolicName=jakarta-regexp.jakarta-regexp&amp;Bundle-Version=1.4&amp;Bundle-Name=jakarta-regexp</bundle>
@@ -17,13 +17,13 @@
       <bundle>mvn:org.overlord/overlord-commons-osgi/2.0.0-SNAPSHOT</bundle>
    </feature>
 
-   <feature name="fta-cdi-war" version="1.0.0">
-      <feature version="1.0.0">fta-dependencies</feature>
-      <bundle>mvn:org.overlord.test/fta-cdi-war/1.0.0/war</bundle>
+   <feature name="fta-cdi-war" version="1.0.0-SNAPSHOT">
+      <feature version="1.0.0-SNAPSHOT">fta-dependencies</feature>
+      <bundle>mvn:org.overlord.test/fta-cdi-war/1.0.0-SNAPSHOT/war</bundle>
    </feature>
 
-   <feature name="fta-errai-cdi-war" version="1.0.0">
-      <feature version="1.0.0">fta-dependencies</feature>
-      <bundle>mvn:org.overlord.test/fta-errai-cdi-war/1.0.0/war</bundle>
+   <feature name="fta-errai-cdi-war" version="1.0.0-SNAPSHOT">
+      <feature version="1.0.0-SNAPSHOT">fta-dependencies</feature>
+      <bundle>mvn:org.overlord.test/fta-errai-cdi-war/1.0.0-SNAPSHOT/war</bundle>
    </feature>
 </features>
