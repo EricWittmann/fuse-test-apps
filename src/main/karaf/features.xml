@@ -26,4 +26,9 @@
       <feature version="1.0.0-SNAPSHOT">fta-dependencies</feature>
       <bundle>mvn:org.overlord.test/fta-errai-cdi-war/1.0.0-SNAPSHOT/war</bundle>
    </feature>
+
+   <feature name="fta-custom-login-service-war" version="1.0.0-SNAPSHOT">
+<!--       <feature version="1.0.0-SNAPSHOT">fta-dependencies</feature> -->
+      <bundle>mvn:org.overlord.test/fta-custom-login-service-war/1.0.0-SNAPSHOT/war</bundle>
+   </feature>
 </features>
