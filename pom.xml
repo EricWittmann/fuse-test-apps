@@ -42,6 +42,7 @@
   <module>fta-cdi-war</module>
   <module>fta-errai-cdi-war</module>
   <module>fta-custom-login-service-war</module>
+  <module>fta-custom-login-filter-war</module>
   </modules>
 
   <build>

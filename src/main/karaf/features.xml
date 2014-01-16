@@ -28,7 +28,10 @@
    </feature>
 
    <feature name="fta-custom-login-service-war" version="1.0.0-SNAPSHOT">
-<!--       <feature version="1.0.0-SNAPSHOT">fta-dependencies</feature> -->
       <bundle>mvn:org.overlord.test/fta-custom-login-service-war/1.0.0-SNAPSHOT/war</bundle>
+   </feature>
+
+   <feature name="fta-custom-login-filter-war" version="1.0.0-SNAPSHOT">
+      <bundle>mvn:org.overlord.test/fta-custom-login-filter-war/1.0.0-SNAPSHOT/war</bundle>
    </feature>
 </features>
